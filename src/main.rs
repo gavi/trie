@@ -12,8 +12,8 @@ fn main(){
             }
         }
     }
-    println!("{:?}",trie.exists("hello".to_string())); 
-    println!("{:?}",trie.exists("Hello".to_string())); 
+    assert_eq!(trie.exists("hello".to_string()),true);
+    assert_eq!(trie.exists("Hello".to_string()),false);
 
 }
 
